@@ -1,10 +1,11 @@
-package mx.edu.utez.u3_04_jggj.controller.almacen;
+package utez.edu.mx.almacenes.controller.almacen;
 
-import mx.edu.utez.u3_04_jggj.config.ApiResponse;
-import mx.edu.utez.u3_04_jggj.model.Almacen;
-import mx.edu.utez.u3_04_jggj.service.AlmacenService;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import utez.edu.mx.almacenes.config.ApiResponse;
+import utez.edu.mx.almacenes.model.Almacen;
+import utez.edu.mx.almacenes.service.AlmacenService;
 
 import java.util.List;
 

@@ -1,12 +1,13 @@
-package mx.edu.utez.u3_04_jggj.service;
+package utez.edu.mx.almacenes.service;
 
-import mx.edu.utez.u3_04_jggj.config.ApiResponse;
-import mx.edu.utez.u3_04_jggj.controller.cliente.ClienteDto;
-import mx.edu.utez.u3_04_jggj.model.Cliente;
-import mx.edu.utez.u3_04_jggj.repository.ClienteRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import utez.edu.mx.almacenes.config.ApiResponse;
+import utez.edu.mx.almacenes.controller.cliente.ClienteDto;
+import utez.edu.mx.almacenes.model.Cliente;
+import utez.edu.mx.almacenes.repository.ClienteRepository;
+
 import java.util.List;
 
 @Service

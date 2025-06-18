@@ -1,7 +1,7 @@
-package mx.edu.utez.u3_04_jggj.repository;
+package utez.edu.mx.almacenes.repository;
 
-import mx.edu.utez.u3_04_jggj.model.Almacen;
 import org.springframework.data.jpa.repository.JpaRepository;
+import utez.edu.mx.almacenes.model.Almacen;
 
 public interface AlmacenRepository extends JpaRepository<Almacen, Integer> {
 

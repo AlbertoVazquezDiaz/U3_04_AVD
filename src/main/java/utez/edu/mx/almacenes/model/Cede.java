@@ -1,4 +1,4 @@
-package mx.edu.utez.u3_04_jggj.model;
+package utez.edu.mx.almacenes.model;
 
 import jakarta.persistence.*;
 import lombok.*;

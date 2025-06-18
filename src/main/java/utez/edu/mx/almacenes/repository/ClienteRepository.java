@@ -1,7 +1,7 @@
-package mx.edu.utez.u3_04_jggj.repository;
+package utez.edu.mx.almacenes.repository;
 
-import mx.edu.utez.u3_04_jggj.model.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
+import utez.edu.mx.almacenes.model.Cliente;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 

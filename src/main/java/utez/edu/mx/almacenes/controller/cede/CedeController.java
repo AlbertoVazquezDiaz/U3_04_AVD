@@ -1,10 +1,12 @@
-package mx.edu.utez.u3_04_jggj.controller.cede;
+package utez.edu.mx.almacenes.controller.cede;
 
-import mx.edu.utez.u3_04_jggj.config.ApiResponse;
-import mx.edu.utez.u3_04_jggj.model.Cede;
-import mx.edu.utez.u3_04_jggj.service.CedeService;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import utez.edu.mx.almacenes.config.ApiResponse;
+import utez.edu.mx.almacenes.model.Cede;
+import utez.edu.mx.almacenes.service.CedeService;
+
 import java.util.List;
 
 @RestController

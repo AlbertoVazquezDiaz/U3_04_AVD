@@ -1,10 +1,11 @@
-package mx.edu.utez.u3_04_jggj.controller.cliente;
+package utez.edu.mx.almacenes.controller.cliente;
 
-import mx.edu.utez.u3_04_jggj.config.ApiResponse;
-import mx.edu.utez.u3_04_jggj.model.Cliente;
-import mx.edu.utez.u3_04_jggj.service.ClienteService;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import utez.edu.mx.almacenes.config.ApiResponse;
+import utez.edu.mx.almacenes.model.Cliente;
+import utez.edu.mx.almacenes.service.ClienteService;
 
 import java.util.List;
 

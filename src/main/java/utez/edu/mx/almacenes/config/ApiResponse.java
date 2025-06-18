@@ -1,4 +1,4 @@
-package mx.edu.utez.u3_04_jggj.config;
+package utez.edu.mx.almacenes.config;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;

@@ -34,7 +34,7 @@ public class AlmacenService {
     }
 
     public ResponseEntity<ApiResponse<Almacen>> save(AlmacenDto dto) {
-        if (dto.getFechaDeRegostro() == null) {
+        if (dto.getFechaDeRegistro() == null) {
             return new ResponseEntity<>(
                     new ApiResponse<>(null, "La fecha de registro no puede estar vacía", HttpStatus.BAD_REQUEST),
                     HttpStatus.BAD_REQUEST
@@ -56,15 +56,11 @@ public class AlmacenService {
         }
 
         Almacen almacen = new Almacen();
-        almacen.setFechaDeRegostro(dto.getFechaDeRegostro());
+        almacen.setFechaDeRegistro(dto.getFechaDeRegistro());
         almacen.setPrecioDeVenta(dto.getPrecioDeVenta());
-        if (dto.getTamano() == '\0') { // Check if the char is uninitialized
-            return new ResponseEntity<>(
-                    new ApiResponse<>(null, "El tamaño no puede estar vacío", HttpStatus.BAD_REQUEST),
-                    HttpStatus.BAD_REQUEST
-            );
-        }
         almacen.setTamano(dto.getTamano());
+        almacen.setCede(cedeOpt.get());
+
         Almacen saved = almacenRepository.save(almacen);
         saved.generateClaveAlmacen();
         Almacen updated = almacenRepository.save(saved);
@@ -108,7 +104,7 @@ public class AlmacenService {
                 );
             }
 
-            almacen.setFechaDeRegostro(dto.getFechaDeRegostro());
+            almacen.setFechaDeRegistro(dto.getFechaDeRegistro());
             almacen.setPrecioDeVenta(dto.getPrecioDeVenta());
             almacen.setTamano(dto.getTamano());
             almacen.setCede(cedeOpt.get());

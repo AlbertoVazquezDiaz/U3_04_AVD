@@ -18,7 +18,7 @@ public class Almacen {
     @Column(name = "id", nullable = false)
     private Integer id;
     private String claveAlmacen;
-    private Date fechaDeRegostro;
+    private Date fechaDeRegistro;
     private double precioDeVenta;
     private char tamano;
 
